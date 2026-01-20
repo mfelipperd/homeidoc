@@ -55,6 +55,11 @@ export const metadata: Metadata = {
   },
 };
 
+import ContactModal from '@/components/contact/ContactModal';
+import SchedulingModal from '@/components/scheduling/SchedulingModal';
+import { ContactModalProvider } from '@/context/ContactModalContext';
+import { SchedulingModalProvider } from '@/context/SchedulingModalContext';
+
 const RootLayout = ({
   children,
 }: Readonly<{
@@ -63,13 +68,19 @@ const RootLayout = ({
   return (
     <html lang="pt-BR" className={inter.variable}>
       <body className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow pt-0">
-          {children}
-        </main>
-        <Footer />
-        <WhatsAppButton />
-        <FaviconPulse />
+        <SchedulingModalProvider>
+          <ContactModalProvider>
+            <Header />
+            <main className="flex-grow pt-0">
+              {children}
+            </main>
+            <Footer />
+            <WhatsAppButton />
+            <FaviconPulse />
+            <ContactModal />
+            <SchedulingModal />
+          </ContactModalProvider>
+        </SchedulingModalProvider>
       </body>
     </html>
   );

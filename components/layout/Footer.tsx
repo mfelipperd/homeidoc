@@ -1,9 +1,13 @@
+'use client';
+
+import { useContactModal } from '@/context/ContactModalContext';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Instagram, Facebook, Linkedin, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { openModal } = useContactModal();
 
   return (
     <footer className="glass-card-strong mt-auto">
@@ -64,12 +68,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/contato" 
-                  className="text-white/80 hover:text-primary-green transition-colors duration-200"
+                <button 
+                  onClick={openModal}
+                  className="text-white/80 hover:text-primary-green transition-colors duration-200 text-left"
                 >
                   Contato
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
