@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <circle cx="50" cy="50" r="45" fill="#5FD68A" opacity="0.2"/>
+  <path d="M50 20C50 20 35 30 35 45C35 55 42 62 50 62C58 62 65 55 65 45C65 30 50 20 50 20Z" fill="#2C3E50"/>
+  <rect x="40" y="60" width="20" height="25" rx="2" fill="#2C3E50"/>
+  <circle cx="50" cy="45" r="8" fill="#5FD68A"/>
+  <text x="50" y="95" font-family="Arial" font-size="8" fill="#2C3E50" text-anchor="middle">AGENDA</text>
+</svg>

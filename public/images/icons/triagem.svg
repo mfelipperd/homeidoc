@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <circle cx="50" cy="50" r="45" fill="#5FD68A" opacity="0.2"/>
+  <rect x="25" y="30" width="50" height="40" rx="2" fill="none" stroke="#2C3E50" stroke-width="3"/>
+  <line x1="30" y1="42" x2="70" y2="42" stroke="#5FD68A" stroke-width="2"/>
+  <line x1="30" y1="50" x2="70" y2="50" stroke="#5FD68A" stroke-width="2"/>
+  <line x1="30" y1="58" x2="55" y2="58" stroke="#5FD68A" stroke-width="2"/>
+  <text x="50" y="95" font-family="Arial" font-size="8" fill="#2C3E50" text-anchor="middle">TRIAGEM</text>
+</svg>

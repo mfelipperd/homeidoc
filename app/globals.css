@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Container personalizado */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* ============================================
+   CORES DO TEMA - HOME IDOC
+   Baseadas no site atual (homeidoc.com.br)
+   ============================================ */
+
+:root {
+  /* Primary colors - mantidos em ambos os modos */
+  --color-primary-navy: #213970;
+  --color-primary-green: #57C27D;
+  --color-primary-teal: #3ECFA0;
+  
+  /* Light mode colors */
+  --color-background: #F5F5F5;
+  --color-foreground: #1F2937;
+  
+  /* Cores Alternativas */
+  --color-navy-alt: #2F4AA4;
+  --color-gray-light: #E5E5E5;
+  --color-gray-medium: #6C757D;
+  --color-gray-dark: #343A40;
+}
+
+/* ============================================
+   ESTILOS BASE
+   ============================================ */
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* ============================================
+   SPECIAL STYLES
+   ============================================ */
+
+/* Container personalizado */
+.container-custom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+
+/* Hidden on mobile */
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+/* ============================================
+   GLASS EFFECTS
+   ============================================ */
+
+@layer components {
+  /* Glassmorphism effect */
+  .glass-card {
+    background: rgba(229, 229, 229, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(200, 200, 200, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .glass-card-strong {
+    background: rgba(229, 229, 229, 0.25);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(200, 200, 200, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .glass-card:hover {
+    background: rgba(229, 229, 229, 0.35);
+    border-color: rgba(200, 200, 200, 0.3);
+  }
+  
+  /* Override text colors in light mode */
+  .text-white,
+  .text-white\/90,
+  .text-white\/80,
+  .text-white\/70,
+  .text-white\/60,
+  .text-white\/50 {
+    color: #1F2937 !important;
+  }
+}
+
+/* ============================================
+   UTILITIES CUSTOMIZADAS
+   ============================================ */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
