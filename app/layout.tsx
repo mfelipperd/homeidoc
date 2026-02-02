@@ -13,12 +13,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://homeidoc.com.br'),
   title: {
     default: 'Home iDoc - Cuidando da sua saúde',
     template: '%s | Home iDoc',
   },
   description: 'Home iDoc - Serviços de saúde de qualidade com profissionalismo e dedicação. Agende sua consulta agora.',
-  keywords: ['saúde', 'médico', 'consulta', 'atendimento domiciliar', 'home care'],
+  keywords: ['saúde', 'médico', 'consulta', 'atendimento domiciliar', 'home care', 'oftalmologia', 'exames em casa', 'teleconsulta'],
   authors: [{ name: 'Home iDoc' }],
   creator: 'Home iDoc',
   publisher: 'Home iDoc',
@@ -48,11 +49,12 @@ export const metadata: Metadata = {
     description: 'Serviços de saúde de qualidade com profissionalismo e dedicação.',
     images: ['/images/logo.webp'],
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 import ContactModal from '@/components/contact/ContactModal';

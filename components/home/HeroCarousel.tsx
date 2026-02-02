@@ -108,12 +108,20 @@ const HeroCarousel = () => {
                   <div className="container-custom w-full">
                     {/* Unified Glass Card for Text and Button */}
                     <div className="w-full max-w-5xl mx-auto p-8 rounded-2xl bg-black/40 backdrop-blur-md border border-white/10 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
-                      <div className="flex-1 text-center md:text-left">
-                        <h2 
-                          className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-xl leading-tight text-[#ffffff]"
-                        >
-                          {slide.title}
-                        </h2>
+                       <div className="flex-1 text-center md:text-left">
+                        {slide.id === 1 ? (
+                          <h1 
+                            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-xl leading-tight text-[#ffffff]"
+                          >
+                            {slide.title}
+                          </h1>
+                        ) : (
+                          <h2 
+                            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-xl leading-tight text-[#ffffff]"
+                          >
+                            {slide.title}
+                          </h2>
+                        )}
                         <p 
                           className="text-xl md:text-2xl font-medium drop-shadow-lg text-[#ffffff]"
                         >
