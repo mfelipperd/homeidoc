@@ -45,7 +45,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link 
-                  href="/agendamento" 
+                  href="/agendar-consulta" 
                   className="text-white/80 hover:text-primary-green transition-colors duration-200"
                 >
                   Agendamento de Consulta
@@ -53,7 +53,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link 
-                  href="/politica-privacidade" 
+                  href="/politica-de-privacidade" 
                   className="text-white/80 hover:text-primary-green transition-colors duration-200"
                 >
                   Política de privacidade
@@ -61,10 +61,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link 
-                  href="/termo-uso" 
+                  href="/termos-e-condicoes-gerais-do-uso-do-site" 
                   className="text-white/80 hover:text-primary-green transition-colors duration-200"
                 >
-                  Termo de Uso
+                  Termos de Uso
                 </Link>
               </li>
               <li>

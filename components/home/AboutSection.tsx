@@ -12,8 +12,8 @@ const AboutSection = () => {
     <section className="py-16 md:py-24">
       <div className="container-custom">
         {/* Título centralizado acima de toda a seção */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12" style={{ textShadow: '0 6px 20px rgba(0, 0, 0, 0.35)' }}>
-          Conheça melhor o <span className="text-primary-green">Home iDoc</span>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12" style={{ textShadow: '0 6px 20px rgba(0, 0, 0, 0.35)' }}>
+          Por que o <span className="text-primary-green">Home iDoc</span> é a escolha exclusiva?
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -27,23 +27,22 @@ const AboutSection = () => {
               <p>
                 O <strong>Home iDoc</strong> nasceu com a vocação de proporcionar atendimento 
                 oftalmológico de alta qualidade fora do ambiente clínico tradicional. Criado 
-                para atender pacientes com dificuldade de mobilidade, aqueles que preferem o 
-                distanciamento social, ou que buscam um atendimento diferenciado e agendado 
-                no conforto da sua casa ou local de trabalho.
+                para atender um público exigente que busca exclusividade, conforto e 
+                privacidade no conforto da sua residência ou local de trabalho. 
               </p>
               
+              <p>
+                Atendemos as principais regiões de <strong>Belém</strong>, com foco especial nos bairros 
+                do <strong>Umarizal, Nazaré e Batista Campos</strong>, levando toda a estrutura 
+                necessária para um diagnóstico preciso com a máxima conveniência.
+              </p>
+
               <p>
                 Somos <strong>pioneiros no Brasil</strong> na aquisição do revolucionário 
                 <strong> VisuALL ETS da Olleyes</strong>, que permite realizar exames de campo 
                 visual de forma rápida, confortável e clinicamente validada. Com equipamentos 
                 portáteis de alta tecnologia, oferecemos uma consulta diagnóstica completa com 
-                a mesma precisão de uma clínica tradicional.
-              </p>
-              
-              <p>
-                Nossa equipe médica especializada e nosso modelo de atendimento combinam 
-                <strong> inovação, tecnologia e conveniência</strong>, proporcionando cuidado 
-                oftalmológico de excelência onde você estiver.
+                a mesma precisão de uma clínica de luxo tradicional.
               </p>
             </div>
           </div>

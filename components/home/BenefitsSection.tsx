@@ -31,7 +31,7 @@ const BenefitsSection = () => {
     <section className="py-16 md:py-24">
       <div className="container-custom">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12" style={{ textShadow: '0 6px 20px rgba(0, 0, 0, 0.35)' }}>
-          Por que escolher o <span className="text-primary-green">Home iDoc</span>?
+          Por que a <span className="text-primary-green">Home iDoc</span> é a escolha exclusiva?
         </h2>
         
         {/* Vídeo - 90% da largura */}
@@ -69,7 +69,9 @@ const BenefitsSection = () => {
                   src={benefit.image}
                   alt={benefit.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
                   className="object-contain rounded-full"
+                  loading={index === 0 ? 'eager' : 'lazy'}
                 />
               </div>
 
