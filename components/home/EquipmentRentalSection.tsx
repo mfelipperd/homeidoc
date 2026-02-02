@@ -1,4 +1,10 @@
+'use client';
+
+import { useRentalModal } from '@/context/RentalModalContext';
+
 const EquipmentRentalSection = () => {
+  const { openModal } = useRentalModal();
+
   return (
     <section className="py-16 md:py-20 bg-gradient-to-br from-white via-gray-50 to-gray-100">
       <div className="container-custom">
@@ -8,16 +14,14 @@ const EquipmentRentalSection = () => {
           </h2>
           <p className="text-xl mb-8 text-gray-700">
             Equipamentos de última geração disponíveis para locação através da 
-            <strong className="text-primary-green"> Smart Doc</strong>
+            <strong className="text-primary-green"> Smart Med</strong>
           </p>
-          <a
-            href="https://smartdoc.com.br"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={openModal}
             className="inline-block bg-primary-green text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-primary-teal transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Saiba Mais
-          </a>
+          </button>
         </div>
       </div>
     </section>

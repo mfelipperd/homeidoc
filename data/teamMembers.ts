@@ -21,7 +21,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dra. Taís Rocha',
     specialty: 'Oftalmologista',
     crm: 'CRM-PA 9447',
-    photo: '/images/team/dr-roberto.jpg',
+    photo:  '/images/team/dra-monica.png',
     description: 'Especialista em córnea e neuroftalmologia',
   },
   {
@@ -37,7 +37,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dra. Mônica Alves',
     specialty: 'Oftalmologista',
     crm: 'CRM 6517',
-    photo: '/images/team/dra-monica.png',
+    photo:'/images/team/dr-roberto.jpg',
     description: 'Especialista em glaucoma, estrabismo, visão subnormal, e oftalmopediatria',
   },
   {

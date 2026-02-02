@@ -57,8 +57,10 @@ export const metadata: Metadata = {
 
 import ContactModal from '@/components/contact/ContactModal';
 import SchedulingModal from '@/components/scheduling/SchedulingModal';
+import RentalModal from '@/components/home/RentalModal';
 import { ContactModalProvider } from '@/context/ContactModalContext';
 import { SchedulingModalProvider } from '@/context/SchedulingModalContext';
+import { RentalModalProvider } from '@/context/RentalModalContext';
 
 const RootLayout = ({
   children,
@@ -67,19 +69,22 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="pt-BR" className={inter.variable}>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen" suppressHydrationWarning>
         <SchedulingModalProvider>
-          <ContactModalProvider>
-            <Header />
-            <main className="flex-grow pt-0">
-              {children}
-            </main>
-            <Footer />
-            <WhatsAppButton />
-            <FaviconPulse />
-            <ContactModal />
-            <SchedulingModal />
-          </ContactModalProvider>
+          <RentalModalProvider>
+            <ContactModalProvider>
+              <Header />
+              <main className="flex-grow pt-0">
+                {children}
+              </main>
+              <Footer />
+              <WhatsAppButton />
+              <FaviconPulse />
+              <ContactModal />
+              <SchedulingModal />
+              <RentalModal />
+            </ContactModalProvider>
+          </RentalModalProvider>
         </SchedulingModalProvider>
       </body>
     </html>
