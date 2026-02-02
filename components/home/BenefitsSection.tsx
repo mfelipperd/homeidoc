@@ -30,7 +30,7 @@ const BenefitsSection = () => {
   return (
     <section className="py-16 md:py-24">
       <div className="container-custom">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12" style={{ textShadow: '0 6px 20px rgba(0, 0, 0, 0.35)' }}>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12">
           Por que a <span className="text-primary-green">Home iDoc</span> é a escolha exclusiva?
         </h2>
         
@@ -52,7 +52,7 @@ const BenefitsSection = () => {
         </div>
 
         {/* Título Como Funciona */}
-        <h3 className="text-3xl md:text-4xl font-bold text-center mb-12" style={{ textShadow: '0 6px 20px rgba(0, 0, 0, 0.35)' }}>
+        <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Como funciona?
         </h3>
 

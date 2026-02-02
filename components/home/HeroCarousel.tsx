@@ -111,13 +111,13 @@ const HeroCarousel = () => {
                        <div className="flex-1 text-center md:text-left">
                         {slide.id === 1 ? (
                           <h1 
-                            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-xl leading-tight text-[#ffffff]"
+                            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-[#ffffff]"
                           >
                             {slide.title}
                           </h1>
                         ) : (
                           <h2 
-                            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-xl leading-tight text-[#ffffff]"
+                            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-[#ffffff]"
                           >
                             {slide.title}
                           </h2>

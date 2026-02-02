@@ -84,7 +84,7 @@ const ServicesSection = () => {
     <section className="py-16 md:py-24">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6" style={{ textShadow: '0 6px 20px rgba(0, 0, 0, 0.35)' }}>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
             Nossos <span className="text-primary-green">Serviços</span>
           </h2>
           <p className="text-xl text-white font-medium max-w-3xl mx-auto drop-shadow-lg">

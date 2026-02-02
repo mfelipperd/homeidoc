@@ -14,7 +14,7 @@ const EquipmentRentalSection = () => {
           </h2>
           <p className="text-xl mb-8 text-gray-700">
             Equipamentos de última geração disponíveis para locação através da 
-            <strong className="text-primary-green"> Smart Med</strong>
+            <strong className="text-primary-green"> Smart Doc</strong>
           </p>
           <button
             onClick={openModal}

@@ -55,7 +55,7 @@ const SchedulingModal = () => {
           )}
           
           <iframe 
-            src="https://smartmed.agendamento.medplusweb.com.br/agendamento/auth/cadastro-conta"
+            src="https://smartdoc.agendamento.medplusweb.com.br/agendamento/auth/cadastro-conta"
             className="w-full h-full border-0"
             onLoad={() => setIsLoading(false)}
             title="Agendamento Online"

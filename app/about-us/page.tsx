@@ -11,7 +11,7 @@ const AboutUsPage = () => {
       <div className="container-custom">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-xl">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Quem <span className="text-primary-green">somos?</span>
           </h1>
         </div>

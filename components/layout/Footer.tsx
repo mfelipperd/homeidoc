@@ -102,7 +102,7 @@ const Footer = () => {
                 CRM-PA 5071 | RQE 6500
               </li>
               <li className="text-xs text-white/60 mt-2">
-                SmartMed Consultoria e Serviços em Oftalmologia
+                SmartDoc Consultoria e Serviços em Oftalmologia
               </li>
             </ul>
           </div>
@@ -111,8 +111,8 @@ const Footer = () => {
           <div className="flex flex-col items-center lg:items-end text-center lg:text-right">
             <div className="mb-4">
               <Image 
-                src="/images/smartmed-logo.png" 
-                alt="Smart Med Oftalmologia" 
+                src="/images/smartdoc-logo.png" 
+                alt="Smart Doc Oftalmologia" 
                 width={140}
                 height={70}
                 className="h-auto"
