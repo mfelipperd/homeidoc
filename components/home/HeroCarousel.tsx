@@ -100,14 +100,14 @@ const HeroCarousel = () => {
                   priority={slide.id === 1}
                 />
                 
-                {/* Overlay - Darker and wider at bottom - Adjusted for readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                {/* Overlay - Deeper gradient at the bottom for better text contrast */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
                 
                 {/* Content */}
                 <div className="absolute inset-0 flex items-end pointer-events-none z-20 pb-24 md:pb-32">
                   <div className="container-custom w-full">
-                    {/* Unified Glass Card for Text and Button */}
-                    <div className="w-full max-w-5xl mx-auto p-8 rounded-2xl bg-black/40 backdrop-blur-md border border-white/10 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+                    {/* Content Container - Removed card styling to show text directly on gradient */}
+                    <div className="w-full max-w-5xl mx-auto p-8 flex flex-col md:flex-row items-center justify-between gap-8">
                        <div className="flex-1 text-center md:text-left">
                         {slide.id === 1 ? (
                           <h1 

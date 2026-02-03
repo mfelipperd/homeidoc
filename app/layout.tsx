@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/common/WhatsAppButton';
-import FaviconPulse from '@/components/common/FaviconPulse';
 import './globals.css';
 
 const inter = Inter({ 
@@ -49,6 +48,10 @@ export const metadata: Metadata = {
     description: 'Serviços de saúde de qualidade com profissionalismo e dedicação.',
     images: ['/images/logo home idoc.png'],
   },
+  icons: {
+    icon: '/images/home idoc casinha.png',
+    apple: '/images/home idoc casinha.png',
+  },
 };
 
 export const viewport = {
@@ -85,7 +88,6 @@ const RootLayout = ({
               </main>
               <Footer />
               <WhatsAppButton />
-              <FaviconPulse />
               <ContactModal />
               <SchedulingModal />
               <RentalModal />
