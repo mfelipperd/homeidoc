@@ -3,6 +3,7 @@ import HeroCarousel from '@/components/home/HeroCarousel';
 import AboutSection from '@/components/home/AboutSection';
 import BenefitsSection from '@/components/home/BenefitsSection';
 import ServicesSection from '@/components/home/ServicesSection';
+import HowItWorksSection from '@/components/home/HowItWorksSection';
 import TeamSection from '@/components/home/TeamSection';
 import EquipmentRentalSection from '@/components/home/EquipmentRentalSection';
 
@@ -18,6 +19,7 @@ const HomePage = () => {
       <AboutSection />
       <BenefitsSection />
       <ServicesSection />
+      <HowItWorksSection />
       <TeamSection />
       <EquipmentRentalSection />
     </>

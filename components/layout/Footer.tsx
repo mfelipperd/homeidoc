@@ -111,7 +111,7 @@ const Footer = () => {
           <div className="flex flex-col items-center lg:items-end text-center lg:text-right">
             <div className="mb-4">
               <Image 
-                src="/images/Logo Smart Doc branca.png" 
+                src="/images/Logo Smart Doc azul (1).png" 
                 alt="Smart Doc Oftalmologia" 
                 width={140}
                 height={70}
@@ -171,10 +171,21 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Copyright & Credit */}
         <div className="border-t border-white/20 mt-8 pt-6 text-center text-sm text-white/60">
-          <p>
+          <p className="mb-2">
             &copy; {currentYear} Home iDoc. Todos os direitos reservados.
+          </p>
+          <p>
+            Criado com <span className="text-red-500">❤️</span> por{' '}
+            <a 
+              href="https://portfolio-marcos-three.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary-green transition-colors duration-200 font-medium"
+            >
+              Marcos Felippe
+            </a>
           </p>
         </div>
       </div>

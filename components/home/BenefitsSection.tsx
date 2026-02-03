@@ -4,29 +4,6 @@ import YouTube from 'react-youtube';
 import Image from 'next/image';
 
 const BenefitsSection = () => {
-  const benefits = [
-    {
-      title: 'Agendamento',
-      description: 'Acesse nosso site e agende seu horário com praticidade',
-      image: '/images/benefits/agendamento.webp',
-    },
-    {
-      title: 'Pagamento',
-      description: 'Realize o pagamento de forma segura e rápida',
-      image: '/images/benefits/pagamento.webp',
-    },
-    {
-      title: 'Pré-atendimento',
-      description: 'Nossa equipe entra em contato para triagem inicial',
-      image: '/images/benefits/triagem.webp',
-    },
-    {
-      title: 'Consulta',
-      description: 'Atendimento oftalmológico completo no conforto do seu lar',
-      image: '/images/benefits/consulta.webp',
-    },
-  ];
-
   return (
     <section className="py-16 md:py-24">
       <div className="container-custom">
@@ -35,8 +12,9 @@ const BenefitsSection = () => {
         </h2>
         
         {/* Vídeo - 90% da largura */}
-        <div className="w-[90%] mx-auto mb-16">
-          <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
+        <div className="w-[90%] mx-auto relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-primary-green to-primary-teal rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl bg-white">
             <YouTube
               videoId="r975vWSzrGs"
               opts={{
@@ -49,43 +27,6 @@ const BenefitsSection = () => {
               className="w-full h-full"
             />
           </div>
-        </div>
-
-        {/* Título Como Funciona */}
-        <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Como funciona?
-        </h3>
-
-        {/* Cards em Flex Row */}
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-          {benefits.map((benefit, index) => (
-            <div
-              key={`benefit-${index + 1}`}
-              className="glass-card-strong rounded-2xl p-8 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)] min-w-[180px]"
-            >
-              {/* Imagem */}
-              <div className="w-24 h-24 mb-6 relative">
-                <Image
-                  src={benefit.image}
-                  alt={benefit.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
-                  className="object-contain rounded-full"
-                  loading={index === 0 ? 'eager' : 'lazy'}
-                />
-              </div>
-
-              {/* Título */}
-              <h3 className="text-xl font-bold mb-3 text-white">
-                {benefit.title}
-              </h3>
-
-              {/* Descrição */}
-              <p className="text-white/90 text-sm font-medium">
-                {benefit.description}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
