@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: 'Serviços de saúde de qualidade com profissionalismo e dedicação.',
     images: [
       {
-        url: '/images/logo.webp',
+        url: '/images/logo home idoc.png',
         width: 1200,
         height: 630,
         alt: 'Home iDoc',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Home iDoc - Cuidando da sua saúde',
     description: 'Serviços de saúde de qualidade com profissionalismo e dedicação.',
-    images: ['/images/logo.webp'],
+    images: ['/images/logo home idoc.png'],
   },
 };
 

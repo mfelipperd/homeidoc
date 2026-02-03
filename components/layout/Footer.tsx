@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <Image 
-                src="/images/logo.webp" 
+                src="/images/logo home idoc.png" 
                 alt="Home iDoc" 
                 width={180}
                 height={60}
@@ -111,7 +111,7 @@ const Footer = () => {
           <div className="flex flex-col items-center lg:items-end text-center lg:text-right">
             <div className="mb-4">
               <Image 
-                src="/images/smartdoc-logo.png" 
+                src="/images/Logo Smart Doc branca.png" 
                 alt="Smart Doc Oftalmologia" 
                 width={140}
                 height={70}

@@ -32,7 +32,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/images/logo.webp"
+              src="/images/logo home idoc.png"
               alt="Home iDoc"
               width={150}
               height={50}

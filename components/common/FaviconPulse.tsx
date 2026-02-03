@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 
 const FaviconPulse = () => {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const originalFavicon = '/favicon.ico';
+  const originalFavicon = '/images/home idoc casinha.png';
   const badgeFaviconRef = useRef<string | null>(null);
 
   useEffect(() => {
