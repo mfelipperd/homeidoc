@@ -3,7 +3,7 @@
 import { useContactModal } from '@/context/ContactModalContext';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Instagram, Facebook, Linkedin, Phone } from 'lucide-react';
+import { Instagram, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -133,31 +133,11 @@ const Footer = () => {
                   <Instagram className="w-5 h-5 text-white" />
                 </a>
                 <a
-                  href="https://facebook.com/homeidoc"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:contato@homeidoc.com.br"
                   className="w-9 h-9 rounded-full bg-white/10 hover:bg-primary-green/50 flex items-center justify-center transition-all duration-300 hover:scale-110"
-                  aria-label="Facebook"
+                  aria-label="Email"
                 >
-                  <Facebook className="w-5 h-5 text-white" />
-                </a>
-                <a
-                  href="https://wa.me/5591991908887"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-primary-green/50 flex items-center justify-center transition-all duration-300 hover:scale-110"
-                  aria-label="WhatsApp"
-                >
-                  <Phone className="w-5 h-5 text-white" />
-                </a>
-                <a
-                  href="https://linkedin.com/company/homeidoc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-primary-green/50 flex items-center justify-center transition-all duration-300 hover:scale-110"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-5 h-5 text-white" />
+                  <Mail className="w-5 h-5 text-white" />
                 </a>
               </div>
             </div>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Quem Somos',
-  description: 'Conheça a Home iDoc, serviço de oftalmologia domiciliar e telemedicina da Smart Doc Oftalmologia.',
+  description: 'Conheça o Home iDoc, serviço de oftalmologia domiciliar e telemedicina da Smart Doc Oftalmologia.',
 };
 
 const AboutUsPage = () => {

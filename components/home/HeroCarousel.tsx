@@ -85,7 +85,7 @@ const HeroCarousel = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="relative overflow-hidden h-screen bg-gray-900">
+    <div className="relative overflow-hidden h-[500px] sm:h-[600px] lg:h-screen bg-gray-900">
       <div className="overflow-hidden h-full" ref={emblaRef}>
         <div className="flex h-full">
           {slides.map((slide) => (
@@ -96,7 +96,7 @@ const HeroCarousel = () => {
                   src={slide.image}
                   alt={slide.title}
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   priority={slide.id === 1}
                 />
                 
@@ -104,26 +104,26 @@ const HeroCarousel = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
                 
                 {/* Content */}
-                <div className="absolute inset-0 flex items-end pointer-events-none z-20 pb-24 md:pb-32">
+                <div className="absolute inset-0 flex items-end pointer-events-none z-20 pb-12 sm:pb-24 md:pb-32">
                   <div className="container-custom w-full">
                     {/* Content Container - Removed card styling to show text directly on gradient */}
-                    <div className="w-full max-w-5xl mx-auto p-8 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div className="w-full max-w-5xl mx-auto p-4 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8">
                        <div className="flex-1 text-center md:text-left">
                         {slide.id === 1 ? (
                           <h1 
-                            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-[#ffffff]"
+                            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4 leading-tight text-[#ffffff]"
                           >
                             {slide.title}
                           </h1>
                         ) : (
                           <h2 
-                            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-[#ffffff]"
+                            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4 leading-tight text-[#ffffff]"
                           >
                             {slide.title}
                           </h2>
                         )}
                         <p 
-                          className="text-xl md:text-2xl font-medium drop-shadow-lg text-[#ffffff]"
+                          className="text-lg sm:text-xl md:text-2xl font-medium drop-shadow-lg text-[#ffffff]"
                         >
                           {slide.subtitle}
                         </p>
@@ -133,7 +133,7 @@ const HeroCarousel = () => {
                         <div className="shrink-0">
                           <a
                             href={slide.cta.link}
-                            className="inline-block bg-primary-green text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-teal transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl pointer-events-auto border-2 border-transparent hover:border-white/20"
+                            className="inline-block bg-primary-green text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-primary-teal transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl pointer-events-auto border-2 border-transparent hover:border-white/20"
                           >
                             {slide.cta.text}
                           </a>

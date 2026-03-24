@@ -2,7 +2,7 @@
 
 const WhatsAppButton = () => {
   const phoneNumber = '5591991908887'; // (91) 99190-8887
-  const message = encodeURIComponent('Olá! Gostaria de agendar uma consulta oftalmológica com a Home iDoc.');
+  const message = encodeURIComponent('Olá! Gostaria de agendar uma consulta oftalmológica com o Home iDoc.');
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (

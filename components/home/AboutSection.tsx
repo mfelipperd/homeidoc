@@ -12,8 +12,8 @@ const AboutSection = () => {
     <section className="py-16 md:py-24">
       <div className="container-custom">
         {/* Título centralizado acima de toda a seção */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12">
-          Por que o <span className="text-primary-green">Home iDoc</span> é a escolha exclusiva?
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 leading-tight">
+          Inovação e Cuidado: A excelência oftalmológica no conforto do seu lar
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
