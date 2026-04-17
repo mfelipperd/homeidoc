@@ -57,7 +57,7 @@ const RentalModal = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-primary-navy leading-tight">
               Locação de Equipamentos
             </h2>
-            <p className="text-primary-green font-semibold mt-1">Smart Med Oftalmologia</p>
+            <p className="text-primary-green font-semibold mt-1">SmartDoc Oftalmologia</p>
           </div>
           <button 
             onClick={closeModal}

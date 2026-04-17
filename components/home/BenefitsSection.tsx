@@ -8,7 +8,7 @@ const BenefitsSection = () => {
     <section className="py-16 md:py-24">
       <div className="container-custom">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12">
-          Por que a <span className="text-primary-green">Home iDoc</span> é a escolha exclusiva?
+          Conheça os diferenciais do <span className="text-primary-green">Home iDoc</span>
         </h2>
         
         {/* Vídeo - 90% da largura */}

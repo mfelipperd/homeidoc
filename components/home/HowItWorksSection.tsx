@@ -33,7 +33,7 @@ const steps: Step[] = [
   {
     number: 4,
     title: 'Atendimento Domiciliar',
-    description: 'Consulta oftalmológica completa no conforto da sua casa com médico e auxiliar técnico.',
+    description: 'Consulta oftalmológica completa no conforto da sua casa com equipe médica.',
     Icon: Stethoscope,
   },
 ];
@@ -66,7 +66,7 @@ const HowItWorksSection = () => {
             Como funciona?
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Um processo simples e humanizado para levar a saúde dos seus olhos até você.
+            Um processo simples e humanizado para a saúde dos seus olhos.
           </p>
         </motion.div>
 

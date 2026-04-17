@@ -24,7 +24,7 @@ const services: Service[] = [
     description: 'Consulta oftalmológica completa na sua casa',
     Icon: Stethoscope,
     items: [
-      'Médico oftalmologista + auxiliar técnico',
+      'Médico oftalmologista + médico auxiliar',
       'Equipamentos portáteis de alta tecnologia',
       'Diagnóstico com precisão clínica',
       'Receita, atestados e relatórios médicos',
@@ -36,8 +36,8 @@ const services: Service[] = [
     Icon: Eye,
     items: [
       'Acuidade visual (com e sem óculos)',
-      'Autorrefração (medição automática de grau)',
-      'Refração subjetiva',
+      'Autorrefração (medição objetiva do grau)',
+      'Refração (subjetiva do grau)',
       'Prescrição de óculos',
     ],
   },
@@ -49,7 +49,7 @@ const services: Service[] = [
       'Medida da pressão intraocular',
       'Avaliação da motilidade ocular',
       'Teste de visão de cores',
-      'Biomicroscopia de fundo de olho',
+      'Fundoscopia/Retinografia',
     ],
   },
   {
@@ -149,7 +149,7 @@ const ServicesSection = () => {
         <div className="mt-12 p-6 glass-card rounded-xl">
           <p className="text-center text-white">
             <strong>Importante:</strong> Para cirurgias ou exames que não possam ser realizados 
-            com equipamentos portáteis, encaminhamos nossos pacientes para uma clínica física parceira 
+            com equipamentos portáteis, encaminhamos nossos pacientes para uma clínica parceira 
             com toda estrutura necessária.
           </p>
         </div>
