@@ -11,45 +11,32 @@ const AboutSection = () => {
   return (
     <section className="py-16 md:py-24">
       <div className="container-custom">
-        {/* Título centralizado acima de toda a seção */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 leading-tight">
-          Inovação e Cuidado: A excelência oftalmológica no conforto do seu lar
-        </h2>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           {/* Coluna Esquerda - Texto */}
-          <div className="text-left space-y-6">
-            <div className="space-y-4 text-base text-white/90 leading-relaxed text-justify">
+          <div className="text-left flex flex-col justify-center">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-left mb-8 leading-tight">
+              Conheça melhor o <span className="text-primary-green">Home iDoc</span>
+            </h2>
+            <div className="space-y-6 text-lg text-white/90 leading-relaxed text-justify">
               <p>
-                <strong className="text-white">Missão:</strong> "Levar Oftalmologia de Excelência onde você precisar!"
+                Pensando no conforto e na segurança de pacientes que possuam dificuldade de locomoção, 
+                prefiram manter o distanciamento social, ou simplesmente desejem um atendimento 
+                diferenciado sem sair de casa ou do trabalho, criamos o <strong>Home iDoc</strong>, 
+                para oferecer atendimento oftalmológico domiciliar com a mesma qualidade e 
+                eficiência do consultório.
               </p>
               
               <p>
-                O <strong>Home iDoc</strong> nasceu com a vocação de proporcionar atendimento 
-                oftalmológico de alta qualidade fora do ambiente clínico tradicional. Criado 
-                para atender um público exigente que busca exclusividade, conforto e 
-                privacidade no conforto da sua residência ou local de trabalho. 
-              </p>
-              
-              <p>
-                Atendemos as principais regiões de <strong>Belém</strong>, com foco especial nos bairros 
-                do <strong>Umarizal, Nazaré e Batista Campos</strong>, levando toda a estrutura 
-                necessária para um diagnóstico preciso com a máxima conveniência.
-              </p>
-
-              <p>
-                Somos <strong>pioneiros no Brasil</strong> na aquisição do revolucionário 
-                <strong> VisuALL ETS da Olleyes</strong>, que permite realizar exames de campo 
-                visual de forma rápida, confortável e clinicamente validada. Com equipamentos 
-                portáteis de alta tecnologia, oferecemos uma consulta diagnóstica completa com 
-                a mesma precisão de uma clínica de luxo tradicional.
+                Com nossa equipe médica especializada, o auxílio de equipamentos portáteis e 
+                tecnologias inovadoras, é possível diagnosticar e tratar diversas doenças 
+                oftalmológicas.
               </p>
             </div>
           </div>
 
           {/* Coluna Direita - Lista de Destaques */}
-          <div className="lg:mt-20">
-            <div className="glass-card-strong rounded-2xl p-8">
+          <div className="flex flex-col">
+            <div className="glass-card-strong rounded-2xl p-8 h-full flex flex-col justify-center">
               <h3 className="text-2xl font-bold mb-6 text-white">
                 Nossos Diferenciais
               </h3>
