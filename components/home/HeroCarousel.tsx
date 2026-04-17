@@ -100,8 +100,8 @@ const HeroCarousel = () => {
                   priority={slide.id === 1}
                 />
                 
-                {/* Overlay - Deeper gradient at the bottom for better text contrast */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
+                {/* Overlay - Light gradient for dark text contrast */}
+                <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent" />
                 
                 {/* Content */}
                 <div className="absolute inset-0 flex items-end pointer-events-none z-20 pb-12 sm:pb-24 md:pb-32">
@@ -111,19 +111,19 @@ const HeroCarousel = () => {
                        <div className="flex-1 text-center md:text-left">
                         {slide.id === 1 ? (
                           <h1 
-                            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4 leading-tight text-[#ffffff]"
+                            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold mb-2 md:mb-4 leading-tight text-primary-navy"
                           >
                             {slide.title}
                           </h1>
                         ) : (
                           <h2 
-                            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4 leading-tight text-[#ffffff]"
+                            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold mb-2 md:mb-4 leading-tight text-primary-navy"
                           >
                             {slide.title}
                           </h2>
                         )}
                         <p 
-                          className="text-lg sm:text-xl md:text-2xl font-medium drop-shadow-lg text-[#ffffff]"
+                          className="text-lg sm:text-xl md:text-2xl font-semibold text-primary-navy/80"
                         >
                           {slide.subtitle}
                         </p>
@@ -157,7 +157,7 @@ const HeroCarousel = () => {
         aria-label="Previous slide"
       >
         <div className="absolute left-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-          <ChevronLeft className="w-12 h-12 text-white drop-shadow-lg" strokeWidth={3} />
+          <ChevronLeft className="w-12 h-12 text-primary-navy" strokeWidth={3} />
         </div>
       </button>
 
@@ -169,7 +169,7 @@ const HeroCarousel = () => {
         aria-label="Next slide"
       >
         <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-          <ChevronRight className="w-12 h-12 text-white drop-shadow-lg" strokeWidth={3} />
+          <ChevronRight className="w-12 h-12 text-primary-navy" strokeWidth={3} />
         </div>
       </button>
 
@@ -182,7 +182,7 @@ const HeroCarousel = () => {
             className={`w-3 h-3 rounded-full transition-all duration-300 pointer-events-auto ${
               index === selectedIndex
                 ? 'bg-primary-green w-8'
-                : 'bg-white/50 hover:bg-white/75'
+                : 'bg-primary-navy/20 hover:bg-primary-navy/40'
             }`}
             onClick={() => scrollTo(index)}
             aria-label={`Go to slide ${index + 1}`}

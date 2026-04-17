@@ -17,28 +17,28 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <Image 
-                src="/images/logo home idoc.png" 
+                src="/images/logo-home-idoc.png" 
                 alt="Home iDoc" 
                 width={180}
                 height={60}
                 className="h-auto"
               />
             </div>
-            <p className="text-sm text-white/80 leading-relaxed">
+            <p className="text-sm text-foreground/80 leading-relaxed">
               Levar Oftalmologia de Excelência onde você precisar! Atendimento domiciliar com equipe especializada e tecnologia de ponta.
             </p>
           </div>
 
           {/* Coluna 2 - Links Rápidos */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">
+            <h3 className="text-lg font-bold mb-4 text-primary-navy uppercase tracking-wider">
               Links Rápidos
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link 
                   href="/" 
-                  className="text-white/80 hover:text-primary-green transition-colors duration-200"
+                  className="text-foreground/80 hover:text-primary-green transition-colors duration-200"
                 >
                   Home
                 </Link>
@@ -46,7 +46,7 @@ const Footer = () => {
               <li>
                 <Link 
                   href="/agendar-consulta" 
-                  className="text-white/80 hover:text-primary-green transition-colors duration-200"
+                  className="text-foreground/80 hover:text-primary-green transition-colors duration-200"
                 >
                   Agendamento de Consulta
                 </Link>
@@ -54,7 +54,7 @@ const Footer = () => {
               <li>
                 <Link 
                   href="/politica-de-privacidade" 
-                  className="text-white/80 hover:text-primary-green transition-colors duration-200"
+                  className="text-foreground/80 hover:text-primary-green transition-colors duration-200"
                 >
                   Política de privacidade
                 </Link>
@@ -62,7 +62,7 @@ const Footer = () => {
               <li>
                 <Link 
                   href="/termos-e-condicoes-gerais-do-uso-do-site" 
-                  className="text-white/80 hover:text-primary-green transition-colors duration-200"
+                  className="text-foreground/80 hover:text-primary-green transition-colors duration-200"
                 >
                   Termos de Uso
                 </Link>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={openModal}
-                  className="text-white/80 hover:text-primary-green transition-colors duration-200 text-left"
+                  className="text-foreground/80 hover:text-primary-green transition-colors duration-200 text-left"
                 >
                   Contato
                 </button>
@@ -80,10 +80,10 @@ const Footer = () => {
 
           {/* Coluna 3 - Contato */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">
+            <h3 className="text-lg font-bold mb-4 text-primary-navy uppercase tracking-wider">
               Contato
             </h3>
-            <ul className="space-y-3 text-sm text-white/80">
+            <ul className="space-y-3 text-sm text-foreground/80">
               <li className="flex items-center gap-2">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -96,12 +96,12 @@ const Footer = () => {
                 </svg>
                 (91) 99190-8887
               </li>
-              <li className="text-xs text-white/60 mt-4">
-                <strong>Responsável Técnico:</strong><br />
+              <li className="text-xs text-foreground/60 mt-4">
+                <strong className="text-primary-navy">Responsável Técnico:</strong><br />
                 Dr. Roberto Carlei C. Lima<br />
                 CRM-PA 5071 | RQE 6500
               </li>
-              <li className="text-xs text-white/60 mt-2">
+              <li className="text-xs text-foreground/60 mt-2">
                 SmartDoc Consultoria e Serviços em Oftalmologia
               </li>
             </ul>
@@ -115,44 +115,44 @@ const Footer = () => {
                 alt="Smart Doc Oftalmologia" 
                 width={140}
                 height={70}
-                className="h-auto"
+                className="h-auto scale-110"
               />
             </div>
             
             {/* Redes Sociais */}
             <div className="mb-4">
-              <p className="text-xs text-white/70 mb-2">Siga-nos</p>
+              <p className="text-xs text-foreground/70 mb-2 font-semibold">Siga-nos</p>
               <div className="flex gap-3 justify-center lg:justify-end">
                 <a
                   href="https://instagram.com/homeidoc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-primary-green/50 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-10 h-10 rounded-full bg-primary-navy/10 hover:bg-primary-green hover:text-white flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm"
                   aria-label="Instagram"
                 >
-                  <Instagram className="w-5 h-5 text-white" />
+                  <Instagram className="w-5 h-5 text-primary-navy group-hover:text-white" />
                 </a>
                 <a
                   href="mailto:contato@homeidoc.com.br"
-                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-primary-green/50 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-10 h-10 rounded-full bg-primary-navy/10 hover:bg-primary-green hover:text-white flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm"
                   aria-label="Email"
                 >
-                  <Mail className="w-5 h-5 text-white" />
+                  <Mail className="w-5 h-5 text-primary-navy group-hover:text-white" />
                 </a>
               </div>
             </div>
 
             {/* Citação Bíblica */}
-            <p className="text-xs italic text-white/60 max-w-xs">
+            <p className="text-xs italic text-foreground/60 max-w-xs font-medium">
               "A Tua palavra é lâmpada que ilumina os meus passos e luz que clareia o meu caminho."
               <br />
-              <span className="text-white/50">Salmos 119:105</span>
+              <span className="text-foreground/40 not-italic">Salmos 119:105</span>
             </p>
           </div>
         </div>
 
         {/* Copyright & Credit */}
-        <div className="border-t border-white/20 mt-8 pt-6 text-center text-sm text-white/60">
+        <div className="border-t border-gray-200 mt-8 pt-6 text-center text-sm text-foreground/60">
           <p className="mb-2">
             &copy; {currentYear} Home iDoc. Todos os direitos reservados.
           </p>

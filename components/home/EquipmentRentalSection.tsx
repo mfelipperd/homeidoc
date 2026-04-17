@@ -9,10 +9,10 @@ const EquipmentRentalSection = () => {
     <section className="py-16 md:py-20 bg-gradient-to-br from-white via-gray-50 to-gray-100">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-navy">
             Locação de Equipamentos Oftalmológicos
           </h2>
-          <p className="text-xl mb-8 text-gray-700">
+          <p className="text-xl mb-8 text-foreground/90">
             Equipamentos de última geração disponíveis para locação através da 
             <strong className="text-primary-green"> Smart Doc</strong>
           </p>

@@ -19,9 +19,9 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Coluna Esquerda - Texto */}
           <div className="text-left space-y-6">
-            <div className="space-y-4 text-base text-white/90 leading-relaxed text-justify">
+            <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify">
               <p>
-                <strong className="text-white">Missão:</strong> "Levar Oftalmologia de Excelência onde você precisar!"
+                <strong className="text-primary-navy">Missão:</strong> "Levar Oftalmologia de Excelência onde você precisar!"
               </p>
               
               <p>
@@ -50,7 +50,7 @@ const AboutSection = () => {
           {/* Coluna Direita - Lista de Destaques */}
           <div className="lg:mt-20">
             <div className="glass-card-strong rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-6 text-white">
+              <h3 className="text-2xl font-bold mb-6 text-primary-navy">
                 Nossos Diferenciais
               </h3>
               <ul className="space-y-4">
@@ -74,7 +74,7 @@ const AboutSection = () => {
                         />
                       </svg>
                     </div>
-                    <span className="text-white/90 leading-relaxed">{highlight}</span>
+                    <span className="text-foreground leading-relaxed">{highlight}</span>
                   </li>
                 ))}
               </ul>

@@ -23,8 +23,8 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
         isScrolled 
-          ? 'bg-white/20 backdrop-blur-sm shadow-sm py-4 border-b border-white/10' // Scrolled: Mais transparente
-          : 'bg-white/50 backdrop-blur-md shadow-lg py-6 border-b border-white/20' // Topo: Mais opaco
+          ? 'bg-white/80 backdrop-blur-md shadow-md py-3 border-b border-gray-200' 
+          : 'bg-transparent py-5' 
       }`}
     >
       <nav className="container-custom relative">
@@ -32,13 +32,13 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/images/logo home idoc.png"
+              src="/images/logo-home-idoc.png"
               alt="Home iDoc"
               width={150}
               height={50}
               priority
               className={`transition-all duration-300 ${
-                isScrolled ? 'h-10' : 'h-12'
+                isScrolled ? 'h-9' : 'h-11'
               } w-auto`}
             />
           </Link>
@@ -48,7 +48,7 @@ const Header = () => {
             <li>
               <Link 
                 href="/" 
-                className="text-white hover:text-primary-green transition-colors duration-200 font-medium drop-shadow-sm"
+                className={`${isScrolled ? 'text-primary-navy' : 'text-primary-navy'} hover:text-primary-green transition-colors duration-200 font-semibold`}
               >
                 Home
               </Link>
@@ -56,7 +56,7 @@ const Header = () => {
             <li>
               <Link 
                 href="/about-us" 
-                className="text-white hover:text-primary-green transition-colors duration-200 font-medium drop-shadow-sm"
+                className={`${isScrolled ? 'text-primary-navy' : 'text-primary-navy'} hover:text-primary-green transition-colors duration-200 font-semibold`}
               >
                 Quem Somos
               </Link>
@@ -64,7 +64,7 @@ const Header = () => {
             <li>
               <Link 
                 href="/perguntas-frequentes" 
-                className="text-white hover:text-primary-green transition-colors duration-200 font-medium drop-shadow-sm"
+                className={`${isScrolled ? 'text-primary-navy' : 'text-primary-navy'} hover:text-primary-green transition-colors duration-200 font-semibold`}
               >
                 FAQ
               </Link>
@@ -72,7 +72,7 @@ const Header = () => {
             <li>
               <button 
                 onClick={openModal}
-                className="text-white hover:text-primary-green transition-colors duration-200 font-medium drop-shadow-sm"
+                className={`${isScrolled ? 'text-primary-navy' : 'text-primary-navy'} hover:text-primary-green transition-colors duration-200 font-semibold`}
               >
                 Contato
               </button>
@@ -80,7 +80,7 @@ const Header = () => {
             <li>
               <Link 
                 href="/agendar-consulta" 
-                className="bg-primary-green text-white px-6 py-2 rounded-full font-semibold hover:bg-primary-teal hover:scale-105 transition-all duration-200 shadow-md"
+                className="bg-primary-green text-white px-6 py-2 rounded-full font-bold hover:bg-primary-teal hover:scale-105 transition-all duration-200 shadow-md"
               >
                 Agendar Consulta
               </Link>
@@ -94,9 +94,9 @@ const Header = () => {
             aria-label="Menu"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            <span className={`block w-6 h-0.5 bg-white drop-shadow-sm transition-transform duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2 bg-white' : ''}`} />
-            <span className={`block w-6 h-0.5 bg-white drop-shadow-sm transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
-            <span className={`block w-6 h-0.5 bg-white drop-shadow-sm transition-transform duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2 bg-white' : ''}`} />
+            <span className={`block w-6 h-0.5 transition-transform duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2 bg-white' : 'bg-primary-navy'}`} />
+            <span className={`block w-6 h-0.5 transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'bg-primary-navy'}`} />
+            <span className={`block w-6 h-0.5 transition-transform duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2 bg-white' : 'bg-primary-navy'}`} />
           </button>
         </div>
 

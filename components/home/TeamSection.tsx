@@ -5,10 +5,10 @@ const TeamSection = () => {
   return (
     <section className="py-16 md:py-24" style={{ boxShadow: '0 10px 20px -5px rgba(0, 0, 0, 0.2)', position: 'relative', zIndex: 10 }}>
       <div className="container-custom">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary-navy">
           Nossa Equipe Médica
         </h2>
-        <p className="text-center text-white/90 mb-12 max-w-2xl mx-auto drop-shadow">
+        <p className="text-center text-foreground/80 mb-12 max-w-2xl mx-auto">
           Profissionais altamente capacitados e experientes, dedicados a cuidar da sua visão
         </p>
         
@@ -36,7 +36,7 @@ const TeamSection = () => {
                 
                 {/* Informações */}
                 <div className="text-center mt-8 flex-grow flex flex-col">
-                  <h3 className="text-xl font-bold mb-2 text-white group-hover:text-primary-green transition-colors duration-300">
+                  <h3 className="text-xl font-bold mb-2 text-primary-navy group-hover:text-primary-green transition-colors duration-300">
                     {member.name}
                   </h3>
                   
@@ -45,12 +45,12 @@ const TeamSection = () => {
                     {member.specialty}
                   </div>
                   
-                  <p className="text-xs text-white/60 mb-4 font-medium tracking-wide">
+                  <p className="text-xs text-foreground/60 mb-4 font-medium tracking-wide">
                     {member.crm}
                   </p>
                   
                   {member.description && (
-                    <p className="text-sm text-white/80 leading-relaxed">
+                    <p className="text-sm text-foreground/80 leading-relaxed font-medium">
                       {member.description}
                     </p>
                   )}

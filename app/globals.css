@@ -115,17 +115,6 @@ body {
     border-color: rgba(255, 255, 255, 0.5);
   }
   
-  /* Override text colors in light mode */
-  .text-white,
-  .text-white\/90,
-  .text-white\/80,
-  .text-white\/70,
-  .text-white\/60,
-  .text-white\/50 {
-    color: #1F2937 !important;
-  }
-  
-
 }
 
 /* ============================================

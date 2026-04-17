@@ -7,7 +7,7 @@ const BenefitsSection = () => {
   return (
     <section className="py-16 md:py-24">
       <div className="container-custom">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-primary-navy">
           Conheça os diferenciais do <span className="text-primary-green">Home iDoc</span>
         </h2>
         

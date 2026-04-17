@@ -87,7 +87,7 @@ const ServicesSection = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
             Nossos <span className="text-primary-green">Serviços</span>
           </h2>
-          <p className="text-xl text-white font-medium max-w-3xl mx-auto drop-shadow-lg">
+          <p className="text-xl text-foreground font-medium max-w-3xl mx-auto">
             Oferecemos uma gama completa de serviços oftalmológicos com a mesma 
             qualidade de uma clínica, no conforto da sua casa ou local de trabalho
           </p>
@@ -107,12 +107,12 @@ const ServicesSection = () => {
                 </div>
 
                 {/* Título */}
-                <h3 className="text-2xl md:text-3xl font-extrabold mb-4 text-white">
+                <h3 className="text-2xl md:text-3xl font-extrabold mb-4 text-primary-navy">
                   {service.title}
                 </h3>
 
                 {/* Descrição */}
-                <p className="text-white font-semibold mb-6 text-base">
+                <p className="text-foreground/80 font-semibold mb-6 text-base">
                   {service.description}
                 </p>
 
@@ -121,7 +121,7 @@ const ServicesSection = () => {
                   {service.items.map((item, itemIndex) => (
                     <li
                       key={`item-${index}-${itemIndex + 1}`}
-                      className="flex items-start gap-3 text-base text-white font-medium"
+                      className="flex items-start gap-3 text-base text-foreground font-medium"
                     >
                       <svg
                         className="w-5 h-5 text-primary-green flex-shrink-0 mt-0.5"
@@ -147,7 +147,7 @@ const ServicesSection = () => {
 
         {/* Nota sobre cirurgias */}
         <div className="mt-12 p-6 glass-card rounded-xl">
-          <p className="text-center text-white">
+          <p className="text-center text-foreground">
             <strong>Importante:</strong> Para cirurgias ou exames que não possam ser realizados 
             com equipamentos portáteis, encaminhamos nossos pacientes para uma clínica parceira 
             com toda estrutura necessária.
