@@ -50,14 +50,15 @@ const PaymentPageCard: React.FC<PaymentPageCardProps> = ({
         });
 
         if (!response.ok) {
-          throw new Error('Falha ao carregar opções de pagamento');
+          const data = await response.json();
+          throw new Error(data.detail || 'Falha ao carregar opções de pagamento');
         }
 
         const data = await response.json();
         setPreferenceId(data.preferenceId);
-      } catch (err) {
+      } catch (err: any) {
         console.error('Erro ao buscar preferência:', err);
-        setError('Não foi possível carregar as opções de pagamento. Tente novamente.');
+        setError(err.message || 'Não foi possível carregar as opções de pagamento. Tente novamente.');
       } finally {
         setLoading(false);
       }
@@ -172,11 +173,11 @@ const PaymentPageCard: React.FC<PaymentPageCardProps> = ({
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary-navy/5 rounded-full blur-3xl -ml-24 -mb-24"></div>
 
         {/* Header */}
-        <div className="text-center mb-10 relative z-10">
+        <div className="text-left mb-10 relative z-10">
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary-navy mb-6 leading-tight">
             {title}
           </h1>
-          <div className="flex items-baseline justify-center gap-2 text-primary-navy">
+          <div className="flex items-baseline justify-start gap-2 text-primary-navy">
             <span className="text-2xl font-medium">R$</span>
             <span className="text-5xl md:text-6xl font-black tabular-nums tracking-tighter">
               {price.replace('R$', '').trim()}
@@ -186,7 +187,7 @@ const PaymentPageCard: React.FC<PaymentPageCardProps> = ({
 
         {/* Description */}
         <div className="mb-10 relative z-10">
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed text-justify font-medium">
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed text-left font-medium">
             {content}
           </p>
         </div>
@@ -239,7 +240,7 @@ const PaymentPageCard: React.FC<PaymentPageCardProps> = ({
         </div>
 
         {/* Security Badge */}
-        <div className="mt-8 flex flex-col items-center relative z-10">
+        <div className="mt-8 flex flex-col items-start relative z-10">
           <div className="flex items-center gap-4 text-gray-400">
             <div className="flex items-center gap-1.5 grayscale opacity-70">
               <ShieldCheck className="w-5 h-5 text-primary-navy" />

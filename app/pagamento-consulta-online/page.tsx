@@ -16,7 +16,7 @@ const OnlinePaymentPage = () => {
           consultationType="consulta-online"
         />
         
-        <div className="max-w-3xl mx-auto px-4 mt-12 text-center text-gray-600 text-lg md:text-xl font-semibold italic animate-fade-in-up animation-delay-500">
+        <div className="max-w-3xl mx-auto px-4 mt-12 text-left text-gray-600 text-lg md:text-xl font-semibold italic animate-fade-in-up animation-delay-500">
           <p className="bg-primary-navy/5 p-6 rounded-2xl border border-primary-navy/10">
             Obs: Havendo necessidade de consulta presencial, o paciente poderá optar pela consulta em domicílio no valor de R$ 1.200,00 ou deverá buscar atendimento em uma clínica especializada.
           </p>
