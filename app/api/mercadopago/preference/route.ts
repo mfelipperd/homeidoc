@@ -58,11 +58,15 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json({ preferenceId: result.id });
-  } catch (error) {
+  } catch (error: any) {
     console.error('Erro ao criar preferência:', error);
     return NextResponse.json(
-      { error: 'Erro ao criar preferência de pagamento' },
-      { status: 500 },
+      { 
+        error: 'Erro ao criar preferência de pagamento',
+        detail: error?.message || 'Sem detalhes',
+        status: error?.status || 500
+      },
+      { status: error?.status || 500 },
     );
   }
 }

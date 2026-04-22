@@ -50,14 +50,15 @@ const PaymentPageCard: React.FC<PaymentPageCardProps> = ({
         });
 
         if (!response.ok) {
-          throw new Error('Falha ao carregar opções de pagamento');
+          const data = await response.json();
+          throw new Error(data.detail || 'Falha ao carregar opções de pagamento');
         }
 
         const data = await response.json();
         setPreferenceId(data.preferenceId);
-      } catch (err) {
+      } catch (err: any) {
         console.error('Erro ao buscar preferência:', err);
-        setError('Não foi possível carregar as opções de pagamento. Tente novamente.');
+        setError(err.message || 'Não foi possível carregar as opções de pagamento. Tente novamente.');
       } finally {
         setLoading(false);
       }
