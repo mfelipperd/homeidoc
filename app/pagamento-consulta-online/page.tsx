@@ -1,14 +1,6 @@
-import type { Metadata } from 'next';
-import PaymentPageCard from '@/components/payment/PaymentPageCard';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Pagamento: Consulta Online',
-  description: 'Realize o pagamento para sua teleconsulta oftalmológica com a Home iDoc. Praticidade e segurança sem sair de casa.',
-  robots: {
-    index: false,
-    follow: true,
-  },
-};
+import PaymentPageCard from '@/components/payment/PaymentPageCard';
 
 const OnlinePaymentPage = () => {
   const content = "A teleconsulta oftalmológica é bastante útil para casos simples que não exijam a utilização de equipamentos para avaliação. Através dessa modalidade, e dentro das limitações inerentes à mesma, o médico avalia o paciente remotamente, dá as orientações necessárias e indica o tratamento se for possível.";
@@ -19,9 +11,9 @@ const OnlinePaymentPage = () => {
         <PaymentPageCard
           title="Consulta Online (Teleconsulta)"
           price="R$ 200,00"
+          priceNumber={200}
           content={content}
-          ctaText="Pagar e confirmar agendamento"
-          ctaLink="https://mpago.la/1gyDJBv"
+          consultationType="consulta-online"
         />
         
         <div className="max-w-3xl mx-auto px-4 mt-12 text-center text-gray-600 text-lg md:text-xl font-semibold italic animate-fade-in-up animation-delay-500">
