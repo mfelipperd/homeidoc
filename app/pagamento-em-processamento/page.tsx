@@ -27,7 +27,7 @@ const ProcessingHeader = () => (
       <div className="flex items-center justify-center gap-2 text-primary-navy/70 font-medium bg-primary-navy/5 py-3 px-6 rounded-2xl w-fit mx-auto border border-primary-navy/10">
         <Mail className="w-5 h-5" />
         <p className="text-lg">
-          Um e-mail de confirmação do Mercado Pago será enviado para o e-mail cadastrado.
+          Um e-mail de confirmação será enviado para o endereço cadastrado assim que o pagamento for aprovado.
         </p>
       </div>
     </div>

@@ -27,7 +27,7 @@ const ConfirmationHeader = () => (
       <div className="flex items-center justify-center gap-2 text-primary-navy/70 font-medium bg-primary-navy/5 py-3 px-6 rounded-2xl w-fit mx-auto border border-primary-navy/10">
         <Mail className="w-5 h-5" />
         <p className="text-lg">
-          Um e-mail de confirmação do Mercado Pago foi enviado para o e-mail cadastrado.
+          Um e-mail de confirmação foi enviado para o endereço cadastrado.
         </p>
       </div>
     </div>
