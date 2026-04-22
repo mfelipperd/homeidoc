@@ -14,6 +14,7 @@ const config: Config = {
         'primary-navy': 'var(--color-primary-navy)',
         'primary-green': 'var(--color-primary-green)',
         'primary-teal': 'var(--color-primary-teal)',
+        'navy-alt': 'var(--color-navy-alt)',
       },
     },
   },
