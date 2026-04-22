@@ -16,7 +16,7 @@ const PresencialPaymentPage = () => {
           consultationType="consulta-presencial"
         />
         
-        <div className="max-w-3xl mx-auto px-4 mt-8 text-left text-gray-500 text-sm">
+        <div className="max-w-3xl mx-auto px-4 mt-8 text-center text-gray-500 text-sm">
           <p>
             Home iDoc • Excelência em Oftalmologia Domiciliar
           </p>
