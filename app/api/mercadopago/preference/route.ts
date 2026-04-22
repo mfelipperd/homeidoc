@@ -23,6 +23,13 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { consultationType } = body;
 
+    if (!process.env.MERCADOPAGO_ACCESS_TOKEN) {
+      return NextResponse.json(
+        { error: 'Configuração do servidor incompleta', detail: 'MERCADOPAGO_ACCESS_TOKEN is missing' },
+        { status: 500 },
+      );
+    }
+
     // Validar tipo de consulta
     if (!consultationType || !VALID_PRICES[consultationType]) {
       return NextResponse.json(
@@ -57,7 +64,10 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    return NextResponse.json({ preferenceId: result.id });
+    return NextResponse.json({ 
+      preferenceId: result.id,
+      v: '1.0.1-' + Date.now() 
+    });
   } catch (error: any) {
     console.error('Erro ao criar preferência:', error);
     return NextResponse.json(
